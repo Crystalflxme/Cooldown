@@ -10,7 +10,7 @@ local cooldown = Cooldown.new(5) -- Create a new cooldown of 5 seconds
 
 part.Touched:Connect(function(hit)
 	local player = Players:GetPlayerFromCharacter(hit.Parent)
-	if not player then -- Make sure what the part is touching is a player
+	if not player then
 		return
 	end
 	
