@@ -14,8 +14,8 @@ part.Touched:Connect(function(hit)
 		return
 	end
 	
-	cooldown:DoTask(player, function(onCooldown, timeLeft) -- Will fire with information about the cooldown
-		if onCooldown then -- Handle the outcome
+	cooldown:DoTask(player, function(onCooldown, timeLeft)
+		if onCooldown then
 			timeLeft = math.floor(timeLeft * 10) / 10 -- Format the time
 			print("There are", timeLeft, "second(s) left!")
 		else
